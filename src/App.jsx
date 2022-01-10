@@ -1,6 +1,7 @@
 import { Switch, Route } from "react-router-dom";
 import { DogsList } from "./components/DogsList";
 import { DogDetails } from "./components/DogDetails";
+import { NavBar } from "./components/NavBar";
 import dogs from "./dogs.json";
 
 import "./App.css";
@@ -17,10 +18,13 @@ function App() {
     return <DogDetails {...props} dog={current} />;
   };
   return (
-    <Switch>
-      <Route exact path="/dogs" render={() => <DogsList dogs={dogs} />} />
-      <Route exact path="/dogs/:name" render={getDog} />
-    </Switch>
+    <>
+      <NavBar dogs={dogs} />
+      <Switch>
+        <Route exact path="/dogs" render={() => <DogsList dogs={dogs} />} />
+        <Route exact path="/dogs/:name" render={getDog} />
+      </Switch>
+    </>
   );
 }
 
