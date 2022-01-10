@@ -6,7 +6,7 @@ export const DogDetails = ({ dog }) => {
   return (
     <div>
       <h1>{dog.name}</h1>
-      <img src={`src/images/${dog.src}.jpg`} alt={dog.name} />
+      <img src={`../src/images/${dog.src}.jpg`} alt={dog.name} />
       <p>Age: {dog.age}</p>
       <ul>
         {dog.facts.map((item) => (
