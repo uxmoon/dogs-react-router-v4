@@ -1,25 +1,11 @@
-.DogsList {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: 1rem;
-  padding: 1rem;
+.DogsList-dog img {
+  filter: grayscale();
+  width: 75%;
+  border-radius: 50%;
+  margin-inline: auto;
+  margin-bottom: 1rem;
 }
 
-@media screen and (min-width: 35rem) {
-  .DogsList {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (min-width: 62.5rem) {
-  .DogsList {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.DogsList img {
-  width: 100%;
-  height: auto;
+.DogsList-dog:hover > img {
+  filter: none;
 }
