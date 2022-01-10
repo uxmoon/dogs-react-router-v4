@@ -1,0 +1,20 @@
+.NavBar {
+  background-color: #232323;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.NavBar a {
+  display: inline-block;
+  color: #ddd;
+  text-decoration: none;
+}
+
+.NavBar a.active {
+  color: #fff;
+}
+
+.NavBar a:not(:last-child) {
+  margin-right: 1rem;
+}
