@@ -6,7 +6,10 @@ export const DogsList = ({ dogs }) => {
     <div className="container pt-4">
       <div className="row">
         {dogs.map((dog) => (
-          <div className="col-12 col-sm-6 col-md-4 text-center" key={dog.name}>
+          <div
+            className="col-12 col-sm-6 col-md-4 text-center mb-4 mb-md-0"
+            key={dog.name}
+          >
             <div className="DogsList-thumbnail">
               <img src={`src/images/${dog.src}.jpg`} alt={dog.name} />
             </div>
