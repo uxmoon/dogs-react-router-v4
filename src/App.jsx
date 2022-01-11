@@ -1,7 +1,7 @@
 import { NavBar } from "./components/NavBar";
 import { Routes } from "./components/Routes";
 import { Helmet } from "react-helmet";
-import dogs from "./dogs.json";
+import { data } from "./dogs";
 import "./App.css";
 
 function App() {
@@ -10,8 +10,8 @@ function App() {
       <Helmet>
         <title>Dog App</title>
       </Helmet>
-      <NavBar dogs={dogs} />
-      <Routes dogs={dogs} />
+      <NavBar dogs={data} />
+      <Routes dogs={data} />
     </>
   );
 }
