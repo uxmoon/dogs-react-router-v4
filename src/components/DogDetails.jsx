@@ -19,11 +19,7 @@ export const DogDetails = ({ dog }) => {
             <div className="row">
               <div className="col-lg-4">
                 <div className="DogsList-thumbnail">
-                  <img
-                    src={`../src/images/${dog.src}.jpg`}
-                    alt={dog.name}
-                    className="card-img-top"
-                  />
+                  <img src={dog.src} alt={dog.name} className="card-img-top" />
                 </div>
               </div>
               <div className="col-lg-8">

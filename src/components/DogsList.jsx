@@ -11,7 +11,7 @@ export const DogsList = ({ dogs }) => {
             key={dog.name}
           >
             <div className="DogsList-thumbnail">
-              <img src={`src/images/${dog.src}.jpg`} alt={dog.name} />
+              <img src={dog.src} alt={dog.name} />
             </div>
             <h2 className="DogsList-name text-center mb-4">{dog.name}</h2>
             <Link to={`/dogs/${dog.name}`} className="btn btn-primary">
