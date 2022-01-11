@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export const NavBar = ({ dogs }) => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container-fluid">
         <NavLink exact to="/dogs" className="navbar-brand">
           Dogs
