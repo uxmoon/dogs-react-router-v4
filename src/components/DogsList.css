@@ -1,11 +1,9 @@
-.DogsList-dog img {
-  filter: grayscale();
-  width: 75%;
-  border-radius: 50%;
-  margin-inline: auto;
-  margin-bottom: 1rem;
+.DogsList-name {
+  font-family: "Shadows Into Light", cursive;
 }
 
-.DogsList-dog:hover > img {
-  filter: none;
+.DogsList-thumbnail {
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+  border: 10px solid #fff;
+  margin-bottom: 1rem;
 }
