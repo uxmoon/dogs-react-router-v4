@@ -7,8 +7,9 @@
   border: 10px solid #fff;
   margin-bottom: 1rem;
   transition: transform 0.2s ease-out;
+  transform: scale(0.95) translateX(4%) rotateZ(calc(-1 * (7 * 1deg)));
 }
 
 .DogsList-dog:hover .DogsList-thumbnail {
-  transform: scale(0.95) translateX(4%) rotateZ(calc(-1 * (7 * 1deg)));
+  transform: scale(0.95) translateX(4%) rotateZ(0);
 }
