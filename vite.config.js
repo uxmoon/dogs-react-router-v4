@@ -21,4 +21,5 @@ export default defineConfig({
       },
     },
   },
+  base: "/react-dog-app/",
 });
